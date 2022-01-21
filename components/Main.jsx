@@ -284,6 +284,27 @@ function Main() {
         </div>
       </div>
 
+      {/* Categories */}
+      <div className="px-3 bg-[#ebebeb] mb-6 mt-6 ">
+        <div className="bg-white p-5 rounded-md flex h-[190px] relative shadow-sm overflow-hidden">
+          <div className="flex flex-col" >
+            <p className="text-[10px] text-gray-700 tracking-widest" >SEGUÍ CUIDANDOTE</p>
+            <p className="font-semibold text-lg mt-2 w-10" >ENVÍOS GRATIS</p>
+          </div>
+          <p className="text-sm text-blue-600 absolute bottom-5" >Ver más</p>
+          <img className="absolute right-0 bottom-0 rounded-md w-[150px] " src="https://http2.mlstatic.com/D_NQ_788329-MLA48821175271_012022-C.webp" alt="" />
+        </div>
+
+        <div className="bg-white p-5 rounded-md flex h-[190px] relative shadow-sm overflow-hidden mt-3">
+          <div className="flex flex-col" >
+            <p className="text-[10px] text-gray-700 tracking-widest" >ESPECIAL ELECTRO</p>
+            <p className="font-semibold text-lg mt-2 w-40 leading-6 " >HASTA 20% OFF Y 18x SIN INTERÉS</p>
+          </div>
+          <p className="text-sm text-blue-600 absolute bottom-5" >Ver más</p>
+          <img className="absolute right-0 bottom-0 rounded-md w-[150px] " src="https://http2.mlstatic.com/D_NQ_720461-MLA48859428502_012022-C.webp" alt="" />
+        </div>
+      </div>
+
       {/* Anuncio Inferior */}
       <BottomAd />
     </div>
