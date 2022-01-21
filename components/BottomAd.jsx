@@ -7,7 +7,7 @@ function handleDestroy() {
 
 function BottomAd() {
   return (
-    <div id="ad" className="fixed bottom-0 left-0 w-screen bg-white border-t">
+    <div id="ad" className="fixed bottom-0 z-40 left-0 w-screen bg-white border-t">
       <div className="p-4 space-y-4">
         <div>
           <h2 className="font-semibold font-gray-900">
