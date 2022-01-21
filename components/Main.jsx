@@ -3,10 +3,11 @@ import Slider from "./Slider";
 import Cart from "./Cart";
 import BottomAd from "./BottomAd";
 import Benefy from "./Benefy";
+import Footer from './Footer'
 
 function Main() {
   return (
-    <div className="pb-20 bg-[#ebebeb]">
+    <div className="bg-[#ebebeb]">
       <Slider />
 
       {/* Banner tarjeta */}
@@ -421,6 +422,7 @@ function Main() {
       </div>
       
       {/* Footer */}
+      <Footer />
 
       {/* Anuncio Inferior */}
       <BottomAd />
