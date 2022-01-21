@@ -2,11 +2,11 @@ import React from "react";
 
 function Cart({ image, name }) {
   return (
-    <div className="flex bg-white px-2 border-b">
-      <div className="pr-2 flex justify-center items-center">
+    <div className="grid grid-cols-3 bg-white px-2 border-b">
+      <div className="pr-3 flex justify-center items-center">
         <img src={image} alt="" className="w-30 h-30 object-center" />
       </div>
-      <div className="flex flex-col py-4 justify-center ">
+      <div className="col-span-2 flex flex-col py-4 justify-center ">
         <div className="space-y-1">
           <p className="text-xs">{name} </p>
           <div className="flex items-center">
