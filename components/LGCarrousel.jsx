@@ -11,31 +11,31 @@ const products = [
     isFree: true,
   },
   {
-    name: "Mochila Cartera Everlast Espalda Dama Anti-robo Urbana Mujer",
-    price: '4.800',
+    name: "Bicicleta Nordic X1.0 By Slp R29 Shim. 21v Freno Disco Susp",
+    price: '23.100',
     image:
-      "https://http2.mlstatic.com/D_Q_NP_855746-MLA48734815841_012022-AB.webp",
+      "https://http2.mlstatic.com/D_Q_NP_815406-MLA44999050370_022021-AB.webp",
     isFree: true,
   },
   {
-    name: "Mochila Cartera Everlast Espalda Dama Anti-robo Urbana Mujer",
-    price: '4.800',
+    name: "Lavarropas Automático Philco Phlf081 Blanco 8kg 220 v",
+    price: '32.510',
     image:
-      "https://http2.mlstatic.com/D_Q_NP_855746-MLA48734815841_012022-AB.webp",
+      "https://http2.mlstatic.com/D_Q_NP_872589-MLA47661256215_092021-AB.webp",
     isFree: true,
   },
   {
-    name: "Mochila Cartera Everlast Espalda Dama Anti-robo Urbana Mujer",
-    price: '4.800',
+    name: "Smart Tv Rca And50fxuhd Led 4k 50  100v/240v",
+    price: '12.362',
     image:
-      "https://http2.mlstatic.com/D_Q_NP_855746-MLA48734815841_012022-AB.webp",
+      "https://http2.mlstatic.com/D_Q_NP_660634-MLA48700484732_122021-AB.webp",
     isFree: true,
   },
   {
-    name: "Mochila Cartera Everlast Espalda Dama Anti-robo Urbana Mujer",
-    price: '4.800',
+    name: "Xiaomi Mi Smart Band 6 1.56 caja de  plástico pc  black, malla  black ",
+    price: '5.530',
     image:
-      "https://http2.mlstatic.com/D_Q_NP_855746-MLA48734815841_012022-AB.webp",
+      "https://http2.mlstatic.com/D_Q_NP_917772-MLA46164931649_052021-AB.webp",
     isFree: true,
   },
   {

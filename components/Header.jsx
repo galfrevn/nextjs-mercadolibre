@@ -180,8 +180,8 @@ function Header() {
           </div>
         </header>
 
-        <div className="w-full h-9 bg-[#ffe600] lg:h-10 lg:py-0 px-2.5 py-3 shadow-sm max-w-[1200px] mx-auto">
-          <div className="flex justify-between">
+        <div className="w-full h-9 bg-[#ffe600] lg:h-12 lg:py-0 px-2.5 py-3 shadow-sm max-w-[1200px] mx-auto">
+          <div className="flex justify-between ">
             <div className="flex h-full justify-start items-center">
               <div id="Marker" className="text-[#ada23a]">
                 <svg
@@ -208,7 +208,7 @@ function Header() {
               <p className="pl-2 text-xs text-[#58531e] lg:hidden inline-block ">
                 Enviar a Santa Fe
               </p>
-              <div className="hidden lg:flex flex-col lg:mt-1">
+              <div className="hidden lg:flex flex-col lg:ml-1 lg:mt-1">
                 <p className="text-[8px] lg:text-[10px] ">Enviar a</p>
                 <p className="text-xs">Santa Fe, Santo Tomé</p>
               </div>
@@ -230,21 +230,19 @@ function Header() {
               </svg>
             </div>
 
-            <div className="hidden lg:flex justify-center items-center space-x-4 text-xs">
-                <p className="mt-2" >Categorias</p>
-                <p className="mt-2" >Ofertas</p>
-                <p className="mt-2" >Historial</p>
-                <p className="mt-2" >Vender</p>
-                <p className="mt-2" >Ayuda</p>
-                <div className="lg:w-[150px] mt-2">
-
-                </div>
-            </div>
+              <div className="hidden lg:flex justify-center items-center space-x-4 text-xs">
+                <p className="mt-2">Categorias</p>
+                <p className="mt-2">Ofertas</p>
+                <p className="mt-2">Historial</p>
+                <p className="mt-2">Vender</p>
+                <p className="mt-2">Ayuda</p>
+                <div className="lg:w-[200px] mt-2"></div>
+              </div>
 
             <div className="hidden lg:flex justify-center items-end h-full space-x-4 text-xs">
-              <p className="mt-2" >Creá tu cuenta</p>
-              <p className="mt-2" >Ingresá</p>
-              <p className="mt-2" >Mis compras</p>
+              <p className="mt-2">Creá tu cuenta</p>
+              <p className="mt-2">Ingresá</p>
+              <p className="mt-2">Mis compras</p>
               <div id="Cart">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

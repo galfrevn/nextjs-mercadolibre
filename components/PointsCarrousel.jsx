@@ -48,7 +48,7 @@ function PointsCarrousel({ text, secondText }) {
         </a>
       </div>
 
-      <div className="px-3 pt-5 pb-16">
+      <div className="px-3 pt-5 pb-8">
         <Carousel
           responsive={responsive}
           swipeable={true}

@@ -2,11 +2,11 @@ import React from "react";
 
 function Level6Cart() {
   return (
-    <div className="max-w-[1200px] mx-auto px-2" >
+    <div className="max-w-[1200px] mx-auto px-3 pb-3" >
       {/* Top */}
       <div className="bg-gradient-to-r from-rose-400 via-fuchsia-500 to-indigo-500 p-3 lg:px-5 rounded-t-md ">
         <div className="flex justify-between">
-          <div className="w-1/3 lg:flex lg:items-center">
+          <div className="w-1/3 flex items-center">
             <h2 className="font-semibold text-lg lg:text-2xl text-white">
               Suscribite al nivel 6
             </h2>
