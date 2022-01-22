@@ -6,7 +6,7 @@ function Benefy({ image1, image2, text1, text2, grad, second }) {
       <div className="flex items-center h-full justify-center rounded-md relative">
         <div>
           <img
-            className="absolute top-0 left-0 rounded-t-md"
+            className="absolute object-cover w-full h-full top-0 left-0 rounded-md"
             src={image1}
             alt=""
           />

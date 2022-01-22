@@ -2,8 +2,8 @@ import React from "react";
 
 function SearchBar() {
   return (
-    <div className="w-full" >
-      <div className="flex bg-white py-1 space-x-3 rounded-sm">
+    <div className="w-full h-full" >
+      <div className="flex bg-white py-1 space-x-3 rounded-sm lg:h-10 ">
         <div className="flex justify-center items-center pl-3 py-1.5">
           <svg
             xmlns="http://www.w3.org/2000/svg"
