@@ -14,9 +14,9 @@ import {
   PaperClipIcon,
   DownloadIcon,
   UserIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/outline";
 import Hamburger from "hamburger-react";
-import disableScroll from "disable-scroll";
 
 const callsToAction = [
   { name: "Inicio", href: "#", icon: HomeIcon, selected: true },
@@ -35,6 +35,31 @@ const callsToAction = [
   { name: "¡Comprá y vendé con la app!", href: "#", icon: DownloadIcon },
 ];
 
+const categories = [
+  { name: "Vehículos" },
+  { name: "Inmuebles" },
+  { name: "Supermercado" },
+  { name: "Tecnologia" },
+  { name: "Hogar y Muebles" },
+  { name: "Electrodomésticos" },
+  { name: "Herramientas" },
+  { name: "Construccion" },
+  { name: "Deportes y Fitness" },
+  { name: "Accesorios para Vehículos" },
+  { name: "Moda" },
+  { name: "Juegos y Jugúetes" },
+  { name: "Bebés" },
+  { name: "Belleza y Cuidado Personal" },
+  { name: "Salud y Equipamiento Médico" },
+  { name: "Industrias y Oficinas" },
+  { name: "Agro" },
+  { name: "Productos Sustentables" },
+  { name: "Industrias y Oficinas" },
+  { name: "Servicios" },
+  { name: "Tiendas Oficiales" },
+  { name: "Ver más Categorias" },
+];
+
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -45,10 +70,8 @@ function Header() {
   useEffect(() => {
     if (isOpen) {
       console.log("Open");
-      disableScroll.on();
     } else {
       console.log("Closed");
-      disableScroll.off();
     }
   }, [isOpen]);
 
@@ -230,14 +253,58 @@ function Header() {
               </svg>
             </div>
 
-              <div className="hidden lg:flex justify-center items-center space-x-4 text-xs">
-                <p className="mt-2">Categorias</p>
-                <p className="mt-2">Ofertas</p>
-                <p className="mt-2">Historial</p>
-                <p className="mt-2">Vender</p>
-                <p className="mt-2">Ayuda</p>
-                <div className="lg:w-[200px] mt-2"></div>
+            <div className="hidden lg:flex w-2/4 -ml-4 justify-start items-center space-x-4 text-xs">
+              <div>
+                <Popover>
+                  {({ open }) => (
+                    <>
+                      <Popover.Button
+                        className={classNames(
+                          open ? "text-gray-900" : "text-gray-500",
+                          "flex justify-center items-center"
+                        )}
+                      >
+                        <div className="mt-2 flex">
+                          <p>Categorias</p>
+                          <ChevronDownIcon className="ml-1 w-3" />
+                        </div>
+                      </Popover.Button>
+
+                      <Transition
+                        as={Fragment}
+                        enter="transition ease-out duration-50"
+                        enterFrom="opacity-0 translate-y-1"
+                        enterTo="opacity-100 translate-y-0"
+                        leave="transition ease-in duration-50"
+                        leaveFrom="opacity-100 translate-y-0"
+                        leaveTo="opacity-0 translate-y-1"
+                      >
+                        <Popover.Panel className="absolute z-10 -ml-[122px] mt-[19px] transform ">
+                          <div class=" absolute w-16 overflow-hidden inline-block -top-3 right-0 ">
+                            <div class=" h-3 w-3 bg-[#333] rotate-45 transform origin-bottom-left"></div>
+                          </div>
+                          <div className=" shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden bg-[#333] rounded-md">
+                            <div className="py-7 ">
+                              {categories.map((item) => (
+                                <div key={item.name} className="flow-root bg-[#333] cursor-pointer hover:bg-blue-500 px-8 py-3">
+                                  <a href="#">
+                                    <span className="ml-3 text-white ">{item.name}</span>
+                                  </a>
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </Popover.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Popover>
               </div>
+              <p className="mt-2">Ofertas</p>
+              <p className="mt-2">Historial</p>
+              <p className="mt-2">Vender</p>
+              <p className="mt-2">Ayuda</p>
+            </div>
 
             <div className="hidden lg:flex justify-center items-end h-full space-x-4 text-xs">
               <p className="mt-2">Creá tu cuenta</p>

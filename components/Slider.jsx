@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 function Slider() {
   return (
     <div className="bg-[#ebebeb] max-w-[1600px] mx-auto " >
+      
       <div className="h-full lg:hidden" >
       <Carousel infiniteLoop={true} autoPlay={true} showThumbs={false} >
         <div>
