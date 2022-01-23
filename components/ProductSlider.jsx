@@ -6,7 +6,7 @@ import { ShareIcon } from "@heroicons/react/outline";
 function ProductSlider() {
   return (
     <div className="mt-6 mb-24 relative" >
-      <Carousel infiniteLoop={true} showThumbs={false} renderIndicator={false} >
+      <Carousel infiniteLoop={true} showThumbs={false}  swipeable={true} renderIndicator={false} >
         <div>
           <img
             className=" object-contain w-[260px] h-[260px]"

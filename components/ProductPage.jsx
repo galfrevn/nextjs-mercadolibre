@@ -2,12 +2,20 @@ import { StarIcon as FilledStar } from "@heroicons/react/solid";
 import React from "react";
 import ProductSlider from "./ProductSlider";
 import BottomAd from "./BottomAd";
-import { TruckIcon } from "@heroicons/react/outline";
+import {
+  BadgeCheckIcon,
+  HeartIcon,
+  RewindIcon,
+  ShareIcon,
+  ShieldCheckIcon,
+  SparklesIcon,
+  TruckIcon,
+} from "@heroicons/react/outline";
 
 function ProductPage() {
   return (
     <>
-      <div className="px-4 mt-5 pb-10">
+      <div className="px-4 mt-5 pb-2 border-b">
         {/* Top */}
         <div className="flex flex-col space-y-2">
           <p className="text-xs text-gray-400">Nuevo | 295 vendidos</p>
@@ -84,19 +92,77 @@ function ProductPage() {
         <p className="text-xs text-gray-600">67 Ventas</p>
 
         {/* Buy Button */}
-        <p className="mt-6 text-md text-gray-800 font-medium">¡Última disponible!</p>
+        <p className="mt-6 text-md text-gray-800 font-medium">
+          ¡Última disponible!
+        </p>
 
-        <div className="flex flex-col space-y-2 mt-8" >
-          <button className="bg-blue-500 text-white font-medium text-sm rounded-md py-3.5 " >Comprar ahora</button>
-          <button className="bg-blue-50 text-blue-500 font-medium text-sm rounded-md py-3.5 " >Agregar al carrito</button>
+        <div className="flex flex-col space-y-2 mt-8">
+          <button className="bg-blue-500 text-white font-medium text-sm rounded-md py-3.5 ">
+            Comprar ahora
+          </button>
+          <button className="bg-blue-50 text-blue-500 font-medium text-sm rounded-md py-3.5 ">
+            Agregar al carrito
+          </button>
         </div>
 
+        {/* Benefits */}
+        <div className="mt-8 space-y-4">
+          <div className="flex space-x-3">
+            <RewindIcon className="w-5 mt-[2px] text-gray-500" />
+            <div className="flex flex-col h-full justify-center items-start">
+              <p className="text-xs text-gray-500">
+                <span className="text-blue-500">Devolución gratis</span> Tenés 30 días desde que lo recibís.
+              </p>
+            </div>
+          </div>
+          <div className="flex space-x-3">
+            <ShieldCheckIcon className="w-8 mt-[2px] text-gray-500" />
+            <div className="flex flex-col h-full justify-center items-start">
+              <p className="text-xs text-gray-500">
+                <span className="text-blue-500">Compra Protegida</span>, recibí el producto que esperabas o te devolvemos tu dinero.
+              </p>
+            </div>
+          </div>
+          <div className="flex space-x-3">
+            <SparklesIcon className="w-5 mt-[2px] text-gray-500" />
+            <div className="flex flex-col h-full justify-center items-start">
+              <p className="text-xs text-gray-500">
+                <span className="text-blue-500">Mercado Puntos</span>. Sumás 549 puntos.
+              </p>
+            </div>
+          </div>
+          <div className="flex space-x-3">
+            <BadgeCheckIcon className="w-5 mt-[2px] text-gray-500" />
+            <div className="flex flex-col h-full justify-center items-start">
+              <p className="text-xs text-gray-500">
+                12 meses de garantía de fábrica.
+              </p>
+            </div>
+          </div>
+        </div>
 
+        <div className="my-8 flex justify-center space-x-5 items-center" >
+          <div className="flex space-x-2 items-center" >
+            <HeartIcon className="w-5 text-blue-400" />
+            <p className="text-xs text-blue-500" >Agragar a favoritos</p>
+          </div>
+          <div className="flex space-x-2 items-center" >
+            <ShareIcon className="w-5 text-blue-400" />
+            <p className="text-xs text-blue-500" >Compartir</p>
+          </div>
+        </div>
 
       </div>
-      <BottomAd />
 
+      {/* Options */}
+      <div className="pt-60" >
+
+      </div>
+
+      <BottomAd />
     </>
+
+    
   );
 }
 
