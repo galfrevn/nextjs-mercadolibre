@@ -30,6 +30,10 @@ function ProductPage() {
             <FilledStar className="w-3 text-gray-200" />
             <p className="text-gray-400 text-xs ml-3">24 Opiniones</p>
           </div>
+          <div className="flex text-[10px] items-center">
+          <p className="bg-orange-500 text-white p-[3px]" >MÁS VENDIDO</p>
+            <p className="text-blue-500 pl-2" >4º en Celulares y Smartphones</p>
+          </div>
         </div>
 
         {/* Slider */}

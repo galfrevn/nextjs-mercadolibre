@@ -2,7 +2,7 @@ import React from "react";
 
 function SearchBar() {
   return (
-    <div className="w-full h-full" >
+    <div className="w-full h-full " >
       <div className="flex bg-white py-1 space-x-3 rounded-sm lg:h-10 ">
         <div className="flex justify-center items-center pl-3 py-1.5">
           <svg
@@ -21,7 +21,12 @@ function SearchBar() {
           </svg>
         </div>
         <input
-          className="bg-white outline-none w-full pr-2 text-sm text-gray-400 font-light"
+          className="hidden md:block bg-white outline-none w-full pr-2 text-sm text-gray-400 font-light "
+          type="text"
+          placeholder="Busca productos, marcas y más"
+        />
+        <input
+          className="md:hidden block transition-all duration-500 ease-out bg-white outline-none w-full pr-2 text-sm text-gray-400 font-light focus:absolute focus:top-0 focus:-left-3 focus:w-screen focus:z-40 focus:h-full focus:pl-5"
           type="text"
           placeholder="Busca productos, marcas y más"
         />
