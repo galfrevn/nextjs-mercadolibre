@@ -142,15 +142,15 @@ function Header() {
                               </div>
                             </div>
                             <div className="flex justify-between px-5 space-x-1 pb-4 border-b mt-2">
-                            <Link href="/login">
-                              <button className="text-xs w-full font-medium text-white bg-blue-500 rounded-md py-3">
-                                Ingresá
-                              </button>
-                            </Link>
-                            <Link href="/login">
-                              <button className="text-xs w-full font-medium text-blue-500 border border-blue-500 py-3 rounded-md">
-                                Creá tu cuenta
-                              </button>
+                              <Link href="/login">
+                                <button className="text-xs w-full font-medium text-white bg-blue-500 rounded-md py-3">
+                                  Ingresá
+                                </button>
+                              </Link>
+                              <Link href="/login">
+                                <button className="text-xs w-full font-medium text-blue-500 border border-blue-500 py-3 rounded-md">
+                                  Creá tu cuenta
+                                </button>
                               </Link>
                             </div>
                             <div className=" py-7 space-y-8">
@@ -184,22 +184,25 @@ function Header() {
                   )}
                 </Popover>
 
-                <div id="Cart">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={1}
-                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                    />
-                  </svg>
-                </div>
+                <Link href="/cart">
+                  <div id="Cart">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={1}
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                  </div>
+                </Link>
+                
               </div>
               <div className="hidden lg:flex justify-center items-center w-72 h-full">
                 <p className="text-xs ">
@@ -312,32 +315,40 @@ function Header() {
                   )}
                 </Popover>
               </div>
-              <p className="mt-2">Ofertas</p>
-              <p className="mt-2">Historial</p>
-              <p className="mt-2">Vender</p>
-              <p className="mt-2">Ayuda</p>
+              <p className="mt-2 cursor-pointer">Ofertas</p>
+              <p className="mt-2 cursor-pointer">Historial</p>
+              <p className="mt-2 cursor-pointer">Vender</p>
+              <p className="mt-2 cursor-pointer">Ayuda</p>
             </div>
 
             <div className="hidden lg:flex justify-center items-end h-full space-x-4 text-xs">
-              <p className="mt-2">Creá tu cuenta</p>
-              <p className="mt-2">Ingresá</p>
-              <p className="mt-2">Mis compras</p>
-              <div id="Cart">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1}
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
-              </div>
+              <Link href="/login">
+                <p className="mt-2">Creá tu cuenta</p>
+              </Link>
+              <Link href="/login">
+                <p className="mt-2">Ingresá</p>
+              </Link>
+              <Link href="/">
+                <p className="mt-2">Mis compras</p>
+              </Link>
+              <Link href="/cart">
+                <div id="Cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={1}
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                    />
+                  </svg>
+                </div>
+              </Link>
             </div>
           </div>
         </div>
