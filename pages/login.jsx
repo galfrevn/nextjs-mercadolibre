@@ -1,15 +1,25 @@
+import Link from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 
 function login() {
+
+  const router = useRouter();
+  const handleSubmit = (e) => {
+    router.push("/")
+  }
+
   return (
     <div className="relative md:bg-[#ebebeb] h-screen ">
       {/* Header */}
       <header className="bg-[#ffe600] p-2 md:h-56">
-        <img
-          className="w-11"
-          src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadolibre/logo__small@2x.png"
-          alt=""
-        />
+        <Link href="/">
+          <img
+            className="w-11"
+            src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadolibre/logo__small@2x.png"
+            alt=""
+          />
+        </Link>
       </header>
 
       {/* Form */}
@@ -22,22 +32,25 @@ function login() {
               </p>
             </div>
 
-            <div className="mt-8">
-              <p className="text-xs mb-2"> Teléfono, e-mail o usuario</p>
-              <input
-                type="text"
-                className="border w-full rounded-md p-3 shadow-sm "
-              />
-            </div>
+            <form onSubmit={handleSubmit} >
+              <div className="mt-8">
+                <p className="text-xs mb-2"> Teléfono, e-mail o usuario</p>
+                <input
+                  required
+                  type="email"
+                  className="border w-full rounded-md p-3 shadow-sm "
+                />
+              </div>
 
-            <div className="mt-8">
-              <button className="bg-blue-500 text-white w-full font-medium text-sm rounded-md py-3.5 ">
-                Continuar
-              </button>
-              <button className="text-blue-500 font-medium w-full text-sm p-3">
-                Crear cuenta
-              </button>
-            </div>
+              <div className="mt-8">
+                <button type="submit" className="bg-blue-500 text-white w-full font-medium text-sm rounded-md py-3.5 ">
+                  Continuar
+                </button>
+                <button className="text-blue-500 font-medium w-full text-sm p-3">
+                  Crear cuenta
+                </button>
+              </div>
+            </form>
           </div>
 
           <div className="py-6 rounded-b-md bg-white border-t justify-center items-center h-6 shadow-sm hidden md:flex ">

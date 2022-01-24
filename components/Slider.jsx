@@ -20,6 +20,12 @@ function Slider() {
         <div>
           <img className=" object-cover" src="https://http2.mlstatic.com/D_NQ_822422-MLA48870416778_012022-F.webp" />
         </div>
+        <div>
+          <img className=" object-cover" src="https://http2.mlstatic.com/D_NQ_968963-MLA48913479867_012022-F.webp" alt="" />
+        </div>
+        <div>
+          <img className=" object-cover" src="https://http2.mlstatic.com/D_NQ_930950-MLA48892822543_012022-F.webp" alt="" />
+        </div>
       </Carousel>
       </div>
 

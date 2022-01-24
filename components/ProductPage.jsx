@@ -12,6 +12,9 @@ import {
   TruckIcon,
 } from "@heroicons/react/outline";
 
+import { Disclosure, Transition } from "@headlessui/react";
+import { ChevronUpIcon } from "@heroicons/react/solid";
+
 function ProductPage() {
   return (
     <>
@@ -31,8 +34,8 @@ function ProductPage() {
             <p className="text-gray-400 text-xs ml-3">24 Opiniones</p>
           </div>
           <div className="flex text-[10px] items-center">
-          <p className="bg-orange-500 text-white p-[3px]" >MÁS VENDIDO</p>
-            <p className="text-blue-500 pl-2" >4º en Celulares y Smartphones</p>
+            <p className="bg-orange-500 text-white p-[3px]">MÁS VENDIDO</p>
+            <p className="text-blue-500 pl-2">4º en Celulares y Smartphones</p>
           </div>
         </div>
 
@@ -115,7 +118,8 @@ function ProductPage() {
             <RewindIcon className="w-5 mt-[2px] text-gray-500" />
             <div className="flex flex-col h-full justify-center items-start">
               <p className="text-xs text-gray-500">
-                <span className="text-blue-500">Devolución gratis</span> Tenés 30 días desde que lo recibís.
+                <span className="text-blue-500">Devolución gratis</span> Tenés
+                30 días desde que lo recibís.
               </p>
             </div>
           </div>
@@ -123,7 +127,8 @@ function ProductPage() {
             <ShieldCheckIcon className="w-8 mt-[2px] text-gray-500" />
             <div className="flex flex-col h-full justify-center items-start">
               <p className="text-xs text-gray-500">
-                <span className="text-blue-500">Compra Protegida</span>, recibí el producto que esperabas o te devolvemos tu dinero.
+                <span className="text-blue-500">Compra Protegida</span>, recibí
+                el producto que esperabas o te devolvemos tu dinero.
               </p>
             </div>
           </div>
@@ -131,7 +136,8 @@ function ProductPage() {
             <SparklesIcon className="w-5 mt-[2px] text-gray-500" />
             <div className="flex flex-col h-full justify-center items-start">
               <p className="text-xs text-gray-500">
-                <span className="text-blue-500">Mercado Puntos</span>. Sumás 549 puntos.
+                <span className="text-blue-500">Mercado Puntos</span>. Sumás 549
+                puntos.
               </p>
             </div>
           </div>
@@ -145,28 +151,149 @@ function ProductPage() {
           </div>
         </div>
 
-        <div className="my-8 flex justify-center space-x-5 items-center" >
-          <div className="flex space-x-2 items-center" >
+        <div className="my-8 flex justify-center space-x-5 items-center">
+          <div className="flex space-x-2 items-center">
             <HeartIcon className="w-5 text-blue-400" />
-            <p className="text-xs text-blue-500" >Agragar a favoritos</p>
+            <p className="text-xs text-blue-500">Agragar a favoritos</p>
           </div>
-          <div className="flex space-x-2 items-center" >
+          <div className="flex space-x-2 items-center">
             <ShareIcon className="w-5 text-blue-400" />
-            <p className="text-xs text-blue-500" >Compartir</p>
+            <p className="text-xs text-blue-500">Compartir</p>
           </div>
         </div>
-
       </div>
 
       {/* Options */}
-      <div className="pt-60" >
+      <div className="py-10 px-4 border-b">
+        <div className="bg-white px-3 py-4 rounded-t-lg border">
+          <h2 className="text-xs font-semibold">Otras opciones de compra</h2>
+        </div>
+        <div className="w-full">
+          <div className="w-full max-w-md mx-auto bg-white">
+            <Disclosure>
+              {({ open }) => (
+                <>
+                  <Disclosure.Button className="border-x border-b flex justify-between w-full px-4 py-3 text-sm font-medium text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
+                    <span className="text-lg">$ 72.021</span>
+                    <p className="ml-[116px] text-[10px] float-right bg-gray-100 rounded-xl px-2">
+                      Llega mañana
+                    </p>
+                    <ChevronUpIcon
+                      className={`${
+                        open ? "transform rotate-180" : ""
+                      } w-5 h-5 transition-all ease-out text-blue-500`}
+                    />
+                  </Disclosure.Button>
 
+                  <Transition
+                    enter="transition-opacity duration-200"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-200"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm border-x  border-b text-gray-500">
+                      <p className="text-xs text-green-600">
+                        Pagá en 9 cuotas sin interés
+                      </p>
+                      <p className="text-xs text-green-600">
+                        Envío gratis a todo el país
+                      </p>
+                      <p className="text-xs mt-3">
+                        Vendido por{" "}
+                        <a className="text-blue-500" href="#">
+                          Valentín Galfré
+                        </a>
+                      </p>
+                      <p className="text-xs">206 ventas</p>
+                      <p className="text-xs text-gray-500">Hace factura A</p>
+                      <button className="bg-blue-500 mt-5 mb-2 text-white w-full font-medium text-xs rounded-md py-2 ">
+                        Comprar ahora
+                      </button>
+                    </Disclosure.Panel>
+                  </Transition>
+                </>
+              )}
+            </Disclosure>
+            <Disclosure as="div" className="">
+              {({ open }) => (
+                <>
+                  <Disclosure.Button className="border-x flex justify-between w-full px-4 py-3 text-sm font-medium text-left focus:outline-none focus-visible:ring focus-visible:ring-opacity-75">
+                    <span className="text-lg">$ 62.328</span>
+                    <p className="ml-24 text-[10px] float-right bg-gray-100 rounded-xl px-2 ">
+                      Cuotas sin interes
+                    </p>
+                    <ChevronUpIcon
+                      className={`${
+                        open ? "transform rotate-180" : ""
+                      } w-5 h-5 transition-all ease-out text-blue-500`}
+                    />
+                  </Disclosure.Button>
+                  <Transition
+                    enter="transition-opacity duration-200"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-200"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                  >
+                    <Disclosure.Panel className="px-4 border-x border-t pt-4 pb-2 text-sm text-gray-500">
+                      <p className="text-xs">Pagá en hasta 12 cuotas</p>
+                      <p className="text-xs text-green-600">
+                        Envío gratis a todo el país
+                      </p>
+                      <p className="text-xs mt-3">
+                        Vendido por{" "}
+                        <a className="text-blue-500" href="#">
+                          Valentín Galfré
+                        </a>
+                      </p>
+                      <p className="text-xs">1.899 ventas</p>
+                      <p className="text-xs text-gray-500">Hace factura A</p>
+                      <button className="bg-blue-500 mt-5 mb-2 text-white w-full font-medium text-xs rounded-md py-2 ">
+                        Comprar ahora
+                      </button>
+                    </Disclosure.Panel>
+                  </Transition>
+                </>
+              )}
+            </Disclosure>
+          </div>
+        </div>
+        <div className="bg-white px-3 py-4 rounded-b-lg border">
+          <h2 className="text-xs text-blue-500">Ver más opciones desde $56.999 </h2>
+        </div>
+      </div>
+
+      {/* Level 6 */}
+      <div className="px-4 py-10 ">
+        <div className="bg-white px-3 py-4 rounded-t-lg border">
+          <h2 className="text-xs font-semibold">
+            Suscribite al nivel 6 de Mercado Puntos
+          </h2>
+        </div>
+        <div className="border-x border-b w-full p-4">
+          <img
+            className="mt-2"
+            src="https://http2.mlstatic.com/D_NQ_NP_723612-MLA48575060873_122021-OO.png"
+            alt=""
+          />
+          <p className="pt-7 text-sm">Ahorrá con los mejores beneficios</p>
+          <p className="text-sm pt-2 text-gray-400">
+            Suscribite al nivel 6 desde $ 599/mes y ahorrá en envíos,
+            suscripciones de contenido, pagos, ¡y mucho más!
+          </p>
+        </div>
+        <div className="bg-white p-4 rounded-b-lg border-b border-x ">
+          <button className="bg-blue-50 w-full text-blue-500 font-medium text-xs rounded-md py-2 ">
+            Agregar al carrito
+          </button>
+        </div>
       </div>
 
       <BottomAd />
     </>
-
-    
   );
 }
 

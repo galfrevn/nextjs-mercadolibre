@@ -1,6 +1,9 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ['jumpseller.cl']
-},
-}
+    domains: ["jumpseller.cl"],
+  },
+  experimental: {
+    scrollRestoration: true,
+  },
+};

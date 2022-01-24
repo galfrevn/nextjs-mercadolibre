@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function LoginBox() {
@@ -7,15 +8,17 @@ function LoginBox() {
         <p className="font-semibold">
           ¡Ingresá a tu cuenta y mejorá tu experiencia!
         </p>
-        <button className="bg-[#3483fa] w-full mt-3.5 p-3.5 rounded-md text-sm  text-white">
-          Ingresá a tu cuenta
-        </button>
+        <Link href="/login">
+          <button className="bg-[#3483fa] w-full mt-3.5 p-3.5 rounded-md text-sm  text-white">
+            Ingresá a tu cuenta
+          </button>
+        </Link>
         <div className="text-sm flex justify-center mt-5 mb-2">
           <p>
             ¿Sos nuevo?{" "}
-            <a className="text-blue-500" href="#">
-              Creá una cuenta
-            </a>
+            <Link href="/login">
+              <a className="text-blue-500">Creá una cuenta</a>
+            </Link>
           </p>
         </div>
       </div>

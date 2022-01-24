@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -92,7 +93,8 @@ function LGCarrousel({ text, secondText }) {
       <div className="pt-5 pb-16">
         <Carousel responsive={responsive} swipeable={true} draggable={false} ssr={true} >
           {products.map((product, index) => (
-            <div className="w-[224px] mx-auto bg-white shadow-sm hover:shadow-xl hover:border rounded-md cursor-pointer" key={index}>
+            <Link href={`/product/${index}`} key={index} >
+            <div className="w-[224px] mx-auto bg-white shadow-sm hover:shadow-xl hover:border rounded-md cursor-pointer" >
               <div className="p-3 border-b">
                 <img src={product.image} alt="" />
               </div>
@@ -106,6 +108,7 @@ function LGCarrousel({ text, secondText }) {
                 </p>
               </div>
             </div>
+            </Link>
           ))}
         </Carousel>
       </div>

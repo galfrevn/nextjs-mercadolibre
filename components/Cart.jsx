@@ -1,7 +1,10 @@
+import Link from "next/link";
 import React from "react";
 
-function Cart({ image, name }) {
+
+function Cart({ image, name, id }) {
   return (
+    <Link href={`/product/${id}`} >
     <div className="grid grid-cols-3 bg-white px-2 border-b">
       <div className="pr-3 flex justify-center items-center">
         <img src={image} alt="" className="w-30 h-30 object-center" />
@@ -18,6 +21,7 @@ function Cart({ image, name }) {
         <p className="text-green-600 text-xs font-semibold">Envio gratis</p>
       </div>
     </div>
+    </Link>
   );
 }
 

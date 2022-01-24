@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 function Footer() {
@@ -29,8 +30,12 @@ function Footer() {
 
       <div className="px-8 pt-4 pb-6 max-w-[1200px] mx-auto">
         <div className="flex space-x-4">
+          <Link href="/login">
           <p className="text-blue-600 text-sm pr-4 border-r">Ingresá</p>
+          </Link>
+          <Link href="/login">
           <p className="text-blue-600 text-sm">Creá tu cuenta</p>
+          </Link>
         </div>
       </div>
 

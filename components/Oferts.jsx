@@ -19,18 +19,22 @@ function Oferts({ text }) {
         <Cart
           image="https://http2.mlstatic.com/D_Q_NP_2X_937192-MLA32686670051_102019-G.webp"
           name="Zonazero Mochilas Jansport Cool Student Originales (Lona mejor calidad)"
+          id="5"
         />
         <Cart
           image="https://http2.mlstatic.com/D_Q_NP_2X_772715-MLA40154584256_122019-G.webp"
           name="Auriculares inalámbricos Skullcandy Crusher Wireless gray y orange "
+          id="6"
         />
         <Cart
           image="https://http2.mlstatic.com/D_Q_NP_2X_855963-MLA40373328806_012020-G.webp"
           name="Drone Daming DM107S con cámara FullHD black + Cargador y bateria"
+          id="7"
         />
         <Cart
           image="https://http2.mlstatic.com/D_Q_NP_2X_935143-MLA44708329566_012021-G.webp"
           name="Samsung Galaxy XCover Pro 64 GB negro 4 GB RAM 25Mpx/8Mpx 4050mAh"
+          id="8"
         />
 
         <div className="bg-white p-3 rounded-b-md border-b flex justify-between shadow-sm">
