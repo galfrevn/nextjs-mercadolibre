@@ -85,10 +85,10 @@ function Header() {
               <div className="w-24 lg:w-80 lg:mr-14 lg:-ml-1 lg:overflow-hidden">
                 <img
                   src="https://jumpseller.cl/images/apps/mercadolibre.jpg"
-                  className="hidden lg:inline-block"
+                  className="hidden lg:inline-block cursor-pointer"
                 />
                 <img
-                  className="w-11 inline-block lg:hidden"
+                  className="w-11 inline-block lg:hidden cursor-pointer"
                   src="/images/logo.png"
                 />
               </div>
@@ -215,7 +215,7 @@ function Header() {
 
         <div className="w-full h-9 bg-[#ffe600] lg:h-12 lg:py-0 px-2.5 py-3 shadow-sm max-w-[1200px] mx-auto">
           <div className="flex justify-between ">
-            <div className="flex h-full justify-start items-center">
+            <div className="flex cursor-pointer h-full justify-start items-center">
               <div id="Marker" className="text-[#ada23a]">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -323,16 +323,16 @@ function Header() {
 
             <div className="hidden lg:flex justify-center items-end h-full space-x-4 text-xs">
               <Link href="/login">
-                <p className="mt-2">Creá tu cuenta</p>
+                <p className="mt-4 cursor-pointer">Creá tu cuenta</p>
               </Link>
               <Link href="/login">
-                <p className="mt-2">Ingresá</p>
+                <p className="mt-4 cursor-pointer">Ingresá</p>
               </Link>
               <Link href="/">
-                <p className="mt-2">Mis compras</p>
+                <p className="mt-4 cursor-pointer">Mis compras</p>
               </Link>
               <Link href="/cart">
-                <div id="Cart">
+                <div id="Cart" className="cursor-pointer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"

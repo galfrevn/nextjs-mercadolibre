@@ -15,26 +15,26 @@ function Footer() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 px-8 pb-8 pt-3 text-xs text-gray-600 space-y-4 border-b max-w-[1200px] mx-auto">
+      <div className="grid grid-cols-2  px-8 pb-8 pt-3 text-xs text-gray-600 space-y-4 border-b max-w-[1200px] mx-auto">
         <p className="mt-3.5">Mi cuenta</p>
-        <p>Historial</p>
-        <p>Favoritos</p>
-        <p>Categorias</p>
-        <p>Ayuda</p>
-        <p>Mis compras</p>
-        <p>Ofertas</p>
-        <p>Tiendas oficiales</p>
-        <p>Mercado Puntos</p>
-        <p>Vender</p>
+        <p className="cursor-pointer" >Historial</p>
+        <p className="cursor-pointer" >Favoritos</p>
+        <p className="cursor-pointer" >Categorias</p>
+        <p className="cursor-pointer" >Ayuda</p>
+        <p className="cursor-pointer" >Mis compras</p>
+        <p className="cursor-pointer" >Ofertas</p>
+        <p className="cursor-pointer" >Tiendas oficiales</p>
+        <p className="cursor-pointer" >Mercado Puntos</p>
+        <p className="cursor-pointer" >Vender</p>
       </div>
 
       <div className="px-8 pt-4 pb-6 max-w-[1200px] mx-auto">
         <div className="flex space-x-4">
           <Link href="/login">
-          <p className="text-blue-600 text-sm pr-4 border-r">Ingresá</p>
+          <p className="text-blue-600 text-sm pr-4 cursor-pointer border-r">Ingresá</p>
           </Link>
           <Link href="/login">
-          <p className="text-blue-600 text-sm">Creá tu cuenta</p>
+          <p className="text-blue-600 cursor-pointer text-sm">Creá tu cuenta</p>
           </Link>
         </div>
       </div>
