@@ -4,6 +4,7 @@ import React from "react";
 
 function login() {
 
+  // eslint-disable-next-line react-hooks/rules-of-hooks
   const router = useRouter();
   const handleSubmit = (e) => {
     router.push("/")

@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Oferts from "../components/Oferts";
-import { useState } from "react";
+
 import { Tab } from "@headlessui/react";
+import Link from "next/link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 function cart() {
-  let [categories] = useState({
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const [categories] = useState({
     Carrito: [
       {
         id: 1,
@@ -68,9 +70,9 @@ function cart() {
                         <li>
                           <p>
                             {post.date}
-                            <a href="/" className="text-blue-500">
-                              {post.link}
-                            </a>
+                            <Link href="/" >
+                              <a className="text-blue-500">{post.link}</a>
+                            </Link>
                           </p>
                         </li>
                       </ul>
