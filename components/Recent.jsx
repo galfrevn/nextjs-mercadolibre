@@ -2,6 +2,29 @@ import React from "react";
 import Cart from "./Cart";
 import LGCarrousel from "./LGCarrousel";
 
+const items = [
+  {
+    image: "https://http2.mlstatic.com/D_Q_NP_2X_677202-MLA40176282059_122019-G.webp",
+    name: "Aire acondicionado Sanyo Split Inverter Frío/calor 2838 Frigorias...",
+    id: 1,
+  },
+  {
+    image: "https://http2.mlstatic.com/D_Q_NP_2X_761429-MLA47845664019_102021-G.webp",
+    name: "Smart Tv Bgh B5021uh6a Led 4k 50  220v Youtube Netflix Spotify ",
+    id: 2,
+  },
+  {
+    image: "https://http2.mlstatic.com/D_Q_NP_2X_867853-MLA47355614698_092021-T.webp",
+    name: "Bicicleta Nordic X1.0 By Slp R29 21v Disco + Suspension nueva y verificada por IMAI",
+    id: 3,
+  },
+  {
+    image: "https://http2.mlstatic.com/D_Q_NP_2X_645779-MLA47735810698_102021-T.webp",
+    name: "Zapatillas Strong Pace Iii Topper Team Sport Tienda Oficial y Garantia oficial Topper",
+    id: 4,
+  }
+]
+
 function Recent() {
   return (
     <>
@@ -11,26 +34,9 @@ function Recent() {
             <h2 className="font-semibold">Inspirado en lo último que viste</h2>
           </div>
 
-          <Cart
-            image="https://http2.mlstatic.com/D_Q_NP_2X_677202-MLA40176282059_122019-G.webp"
-            name="Aire acondicionado Sanyo Split Inverter Frío/calor 2838 Frigorias..."
-            id="1"
-          />
-          <Cart
-            image="https://http2.mlstatic.com/D_Q_NP_2X_761429-MLA47845664019_102021-G.webp"
-            name="Smart Tv Bgh B5021uh6a Led 4k 50  220v Youtube Netflix Spotify "
-            id="2"
-          />
-          <Cart
-            image="https://http2.mlstatic.com/D_Q_NP_2X_867853-MLA47355614698_092021-T.webp"
-            name="Bicicleta Nordic X1.0 By Slp R29 21v Disco + Suspension nueva y verificada por IMAI"
-            id="3"
-          />
-          <Cart
-            image="https://http2.mlstatic.com/D_Q_NP_2X_645779-MLA47735810698_102021-T.webp"
-            name="Zapatillas Strong Pace Iii Topper Team Sport Tienda Oficial y Garantia oficial Topper"
-            id="4"
-          />
+          {items.map(i => (
+            <Cart key={i.id} name={i.name} image={i.image} />
+          ))}
 
           <div className="bg-white p-3 rounded-b-md border-b flex justify-between shadow-sm">
             <a href="#" className="text-xs font-semibold text-blue-500">

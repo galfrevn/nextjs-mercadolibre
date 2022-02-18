@@ -20,7 +20,7 @@ function ProductPage() {
     <>
       <div className="px-4 mt-5 pb-2 border-b">
         {/* Top */}
-        <div className="flex flex-col space-y-2">
+        <div className="md:hidden flex flex-col space-y-2">
           <p className="text-xs text-gray-400">Nuevo | 295 vendidos</p>
           <p className="text-sm text-gray-900 pr-10">
             Samsung Galaxy XCover Pro 64 GB negro 4 GB RAM
@@ -37,6 +37,25 @@ function ProductPage() {
             <p className="bg-orange-500 text-white p-[3px]">MÁS VENDIDO</p>
             <p className="text-blue-500 pl-2">4º en Celulares y Smartphones</p>
           </div>
+        </div>
+
+        <p className="hidden md:flex text-xs max-w-6xl mx-auto -mt-2 mb-2 ">
+          <b className="mr-2" > Tambien puede interesarte: </b> iphone 11 - 64gbsamsung - a03 - xiaomi 11 - lite - 5g 
+        </p>
+        <div className="hidden text-xs  md:flex max-w-6xl mx-auto space-x-2 ">
+          <p className="">Volver al listado |</p>
+          <a href="#" className="text-blue-500">
+            Celulares y Teléfonos &gt;
+          </a>
+          <a href="#" className="text-blue-500">
+            Celulares y Smartphones &gt;
+          </a>
+          <a href="#" className="text-blue-500">
+            Samsung &gt;
+          </a>
+          <a href="#" className="text-blue-500">
+            XCover
+          </a>
         </div>
 
         {/* Slider */}
@@ -262,7 +281,9 @@ function ProductPage() {
           </div>
         </div>
         <div className="bg-white px-3 py-4 rounded-b-lg border">
-          <h2 className="text-xs text-blue-500">Ver más opciones desde $56.999 </h2>
+          <h2 className="text-xs text-blue-500">
+            Ver más opciones desde $56.999{" "}
+          </h2>
         </div>
       </div>
 
